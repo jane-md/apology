@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I love you 🥺</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="apology-screen" class="center">
+    <img id="catImage" src="cat1.jpg" class="cat">
+    <h2 id="apologyText">Sorry po, baby.</br>Please forgive me po 🥺</h2>
+
+    <div class="buttons">
+        <button id="okayBtn" class="okay">OK</button>
+        <button id="noBtn" class="no">NO 😾</button>
+    </div>
+</section>
+
+<!-- HEART GAME SCREEN -->
+<section id="heart-screen" class="center hidden">
+    <h2>Catch 5 hearts if you forgive me na</h2>
+    <div id="heartContainer"></div>
+    <p id="heartCount">Hearts: 0 / 5</p>
+</section>
+
+<!-- FORGIVENESS METER SCREEN -->
+<section id="meter-screen" class="center hidden">
+    <img id="meterCat" src="cat_sad.jpg" class="cat">
+    <h2>Make the cat happy (me) 🐾</h2>
+
+    <div class="meter">
+        <div id="meterFill"></div>
+    </div>
+
+    <button id="forgiveBtn">Tap me</button>
+</section>
+
+<!-- FINAL MESSAGE -->
+<section id="final-screen" class="center hidden">
+    <h2>4 Pics 1 Word</h2>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front"><img src="1.jpg"></div>
+                <div class="back"><p>Baby, I want to say sorry again po na madalas ko ikaw nakakatulugan po lately. Hindi po dahil wala akong gana kausap ka or hindi kita priority po huhu. Sobrang pagod lang talaga minsan po and yung body ko naka auto shut down pag uwi 😭 Pero I understand if it makes you feel unimportant po or ignored huhu gets na gets ko po ikaw, kaya I'm sorry if I made you feel that way po, my baby. I promise na babawi ako po and I'll make more time for you pa po.</p></div>
+            </div>
+            <button class="flipBtn hidden">Flip</button>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="front"><img src="2.jpg"></div>
+                <div class="back"><p>I also want to apologize po about what happened weeks ago. I know that misunderstanding hurt you and syempre ako rin po, and kahit hindi naman po sinasadya, may mga words and reactions na nakakasakit pa rin. I'm really sorry po ulit baby ah if I made you feel unheard or misunderstood that time po. Hindi ko intention na masaktan ikaw po. Ni-handle ko sana yon nang mas maayos and I'm learning from that po. Thank you po for still choosing to talk sa mga bagay na nasaktan ko po ikaw at sa pagpili na ayusin po natin instead of giving up po 🥺</p></div>
+            </div>
+            <button class="flipBtn hidden">Flip</button>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="front"><img src="3.jpg"></div>
+                <div class="back"><p>Thank you po for understanding me kahit minsan ang hirap intindihin ng situation ko po. Thank you for being patient when I'm tired, when I'm quiet and when I'm overwhelmed po. Hindi ko man agad naipapakita palagi, pero I notice everything you do po.
+I'm so proud of you po, baby ko. Sa pag-handle mo ng lahat, from your school works, sa pagre-review mo, sa work mo, at sa pagsabay mo ng pag s-study at pag w-work, sobrang nakaka-proud po lahat ng ginagawa mo, bebe. I see how hard you try every single day po, kahit pagod ka na rin. Hindi madali yung ginagawa mo po, pero you still show up and give your best po sa lahat. Good luck po sa baby palagi ah, I know na kayang kaya mo yan po and I hope you know that I'm always here po, cheering for you and supporting you in everything you do po.</p></div>
+            </div>
+            <button class="flipBtn hidden">Flip</button>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="front"><img src="4.jpg"></div>
+                <div class="back"><p>Baby, hindi po kita tine-take for granted po ah. Baka minsan hindi ko lang agad napaparamdam po, pero sobrang importante mo sakin po. Ikaw yung comfort ko palagi, yung pahinga ko after ng nakakapagod na araw po. Ikaw yung gusto kong kausap bago mag sleep at yung gusto kong makasama kahit pagod na pagod ako.
+Lagi kong sinasabi na hindi ako perfect po and I'm sorry po sa mga pagkukulang ko. May mga times na hindi ko nahahandle nang maayos po, pero please believe me when I say mahal kita po. Kase mahal na mahal ko ikaw, baby :(( Hindi lang kapag okay tayo, hindi lang kapag masaya tayo po, kundi lalo na rin po kapag may inaayos tayo. Pipiliin ko pa rin araw-araw na mag stay po. And thank you po kasi nandito ka pa rin. Hindi ko yun minamaliit po. I'm really grateful for you po. Sobra 🥺
+
+I love you so much po, baby :))</p></div>
+            </div>
+            <button class="flipBtn hidden">Flip</button>
+        </div>
+    </div>
+
+    <!-- Guess Section -->
+    <div id="guess-section">
+        <p><strong>Hint:</strong> me</p>
+        <input type="text" id="answerInput" placeholder="Your answer here..">
+        <button id="submitAnswer">Submit</button>
+        <p id="resultText"></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
